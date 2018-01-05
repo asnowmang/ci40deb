@@ -1,0 +1,8 @@
+#! /bin/sh
+
+mount /dev /chroot/dev
+mount /proc /chroot/proc
+mount /sys /chroot/sys
+mount /dev/pts /chroot/dev/pts
+chroot /chroot /bin/mksh
+
